@@ -1,0 +1,171 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+
+}
+body {
+  max-height: 100vh;
+  background-color: wheat;
+  margin: 5px;
+}
+nav {
+  background-color: rgb(148, 5, 5);
+  margin: 3px;
+  border-radius: 19px 19px 19px 19px;
+  overflow: hidden;
+
+}
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav li{
+height: 100%;
+}
+nav a{
+  height: 100%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+nav li:last-child{
+  margin-right: 15px;
+}
+
+ div > img {
+  height: 90px;
+  width: 250px;
+  object-fit: cover;
+  /* display: inline-block; */
+  border-radius: 15px 20px 20px 15px;
+  margin: 3px;
+  margin-top: 6.4px;
+  margin-left: 7px;
+  background-color: rgb(241, 197, 116);
+}
+a:link {
+  cursor: pointer;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: center;      /* centers vertically if needed */
+  margin-top: 25px;         /* adjust as you like */
+}
+
+.search-container input {
+  background: #fff;
+  border-radius: 40px;
+  padding: 13px 50px;
+  box-shadow: 0 6px 9px rgba(15, 8, 8, 0.182);
+  width: 690px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-family: "Bitcount Grid Double", system-ui;
+  text-align: center;
+  font-weight: 600;
+}
+
+
+.categories {
+  text-align: center;
+  padding: 70px 20px;
+}
+
+#title-1 {
+  font-size: 1.8rem;
+  margin-top: 1.5em;
+  margin-left: 10px;
+  font-family: "Bitcount Grid Double", system-ui;
+  font-weight: 500;
+}
+
+.category-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  font-family: "Bitcount Grid Double", system-ui;
+  font-weight: 100;
+}
+
+.category {
+  width: 140px;
+  text-align: center;
+}
+
+.category img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  background: #f1f1f1;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.category img:hover {
+  transform: rotate(360deg);
+  transition: 0.7s;
+}
+
+.category p {
+  margin-top: 12px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  font-size: 0.95rem;
+  padding-right: 25px;
+  font-family: "Bitcount Grid Double", system-ui;
+  padding-left: 20px;
+}
+footer.about2 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #8b0000;
+  color: wheat;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  font-family: "Bitcount Grid Double", system-ui;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 20px 20px 0 0;
+  z-index: 10; /* ensures it’s above other elements */
+}
+
+/* Footer text and link styles */
+footer.about2 .credit {
+  margin: 0 10px;
+}
+
+footer.about2 a {
+  color: wheat;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+  display: inline-block; /* needed for transform to work properly */
+}
+
+footer.about2 a:hover {
+  transform: scale(1.2); /* scales link smoothly */
+  color: #ffcc00; /* optional golden glow on hover */
+}
+
+
+@media (max-width: 600px) {
+  footer.about2 {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+

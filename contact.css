@@ -1,0 +1,110 @@
+/* Google Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, maroon 30%, #c49f77 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Glassy card container */
+.contact-card {
+  background: rgba(255, 245, 220, 0.2); /* wheat color glass */
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 40px 30px;
+  border-radius: 16px;
+  max-width: 420px;
+  width: 90%;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  animation: fadeIn 1.2s ease-out;
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+
+/* Heading & subtitle */
+.contact-card h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: wheat;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-weight: 300;
+  color: #f3e9da;
+  margin-bottom: 25px;
+}
+
+/* Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.contact-form label {
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: wheat;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  outline: none;
+  padding: 12px 14px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.02);
+}
+
+.contact-form button {
+  background: wheat;
+  color: maroon;
+  border: none;
+  padding: 14px 0;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+  background: #f5deb3;
+  transform: scale(1.05);
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: wheat;      
+  opacity: 1;       
+}
